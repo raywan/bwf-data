@@ -88,11 +88,11 @@ def getWeeks(category):
     return result
 
 def main():
-    weeks = getWeeks('wd')
+    weeks = getWeeks('xd')
     for w in weeks:
-        print 'Retrieving from {target}: {year}--{week}'.format(target='wd', year=w[0], week=w[1])
-        name = 'data/wd/bwf_{target}_{year}w{week}.csv'.format(target='wd', year=w[0], week=w[1])
-        saveData(getBWFRankings('wd', w[0], w[1]), name)
+        print 'Retrieving from {target}: {year}--{week}'.format(target='xd', year=w[0], week=w[1])
+        name = 'data/xd/bwf_{target}_{year}w{week}.csv'.format(target='xd', year=w[0], week=w[1])
+        saveData(getBWFRankings('xd', w[0], w[1]), name)
         print 'Done'
         print 'Resting for 20 seconds...'
         time.sleep(30)
